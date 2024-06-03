@@ -2,11 +2,14 @@
 @import "./bootstrap-custom-theme.scss";
 @import "./fonts.scss";
 @import "./icons.scss";
+@import "./sidebar.scss";
+@import "./chatbot.scss";
 
 
 body {
-    font-family: $font-sand;
-    overflow-x: hidden;
+    font-family: $font-sansation;
+    background-color: $base;
+    color: $white;
 
     &::-webkit-scrollbar {
         width: 6px;
@@ -51,5 +54,17 @@ body {
 
     .cursor {
         cursor: pointer;
+    }
+
+    a {
+        color: inherit !important;
+    }
+
+    .user {
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .ai-ques-wrapper{
+        margin-left: 1rem;
     }
 }

@@ -12,15 +12,11 @@ $base: #0A1027;
 $border: #283865;
 
 $primary-gradient: linear-gradient(90deg, #00DDFF 0%, #FF00D4 50%, #FBB040 100%); // btn gradient
-$secondary-gradient: linear-gradient(48.33deg, #00DDFF 11.26%, #FF00D4 48.3%, #FBB040 85.34%);  // AI chat Badge
-
+$secondary-gradient: linear-gradient(48.33deg, #00DDFF 11.26%, #FF00D4 48.3%, #FBB040 85.34%); // AI chat Badge
 
 
 // Add other customizations as needed
+$font-sansation: 'Sensations', sans-serif;
 
-$font-tommy: 'Made Tommy Soft',
-    sans-serif;
-$font-sand: 'Quicksand',
-    sans-serif;
 
 @import "~bootstrap/scss/bootstrap";

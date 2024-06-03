@@ -1,0 +1,15 @@
+body {
+    .sidebar {
+        width: 80px;
+
+        .sidebar-items {
+            height: calc(100vh - 86px);
+            align-items: center;
+
+            .user-item {
+                margin-top: auto;
+            }
+
+        }
+    }
+}
