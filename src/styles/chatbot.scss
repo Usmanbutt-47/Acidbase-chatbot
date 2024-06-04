@@ -1,5 +1,54 @@
-body{
-    .chatbot{
+body {
+    .card.chatbot {
         width: calc(100% - 86px);
+        height: calc(100vh - 62px);
+        border: 1px solid $border;
+        border-radius: 0;
+        border-bottom: none;
+        border-top: none;
+
+        .card-header {
+            border-bottom: 1px solid $border;
+            padding: 1rem;
+            height: 5rem;
+        }
+
+        .card-body {
+            overflow: auto;
+            padding-bottom: 62px;
+
+            .ai-ans-wrapper {
+                margin-bottom: 1rem;
+
+                .bg-ans {
+                    border: 1px solid $border;
+                    border-radius: 0 8px 8px 8px;
+                    background-color: $secondary;
+                    padding: 1rem;
+                    margin-bottom: 0.5rem;
+                }
+            }
+
+            .user-ques-wrapper {
+                justify-content: end;
+                text-align: end;
+                margin-bottom: 1rem;
+
+                .bg-ques {
+                    border: 1px solid $border;
+                    border-radius: 8px 0 8px 8px;
+                    background-color: $secondary;
+                    padding: 1rem;
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
+
+        .card-footer {
+            .voice-icon {
+                right: 1.5rem;
+                top: 1.75rem;
+            }
+        }
     }
 }

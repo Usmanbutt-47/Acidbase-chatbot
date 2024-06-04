@@ -10,6 +10,12 @@ body {
     font-family: $font-sansation;
     background-color: $base;
     color: $white;
+    background-image: url(/assets/images/bg-homepage-chat-gradient.svg);
+    display: block;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
 
     &::-webkit-scrollbar {
         width: 6px;
@@ -20,8 +26,8 @@ body {
     }
 
     &::-webkit-scrollbar-thumb {
-        background: $secondary;
-        border-radius: 20px;
+        background: $border;
+        border-radius: 50px 0 0 50px;
     }
 
     &::-webkit-scrollbar-thumb:hover {
@@ -33,7 +39,8 @@ body {
         list-style-type: none;
     }
 
-    div {
+    div,
+    ul {
         &::-webkit-scrollbar {
             width: 6px;
         }
@@ -43,12 +50,12 @@ body {
         }
 
         &::-webkit-scrollbar-thumb {
-            background: $light;
-            border-radius: 20px;
+            background: $border;
+            border-radius: 50px 0 0 50px;
         }
 
         &::-webkit-scrollbar-thumb:hover {
-            background: $secondary;
+            background: $primary;
         }
     }
 
@@ -64,7 +71,8 @@ body {
         border-radius: 50%;
         object-fit: cover;
     }
-    .ai-ques-wrapper{
+
+    .ai-ques-wrapper {
         margin-left: 1rem;
     }
 }

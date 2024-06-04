@@ -2,12 +2,26 @@ body {
     .sidebar {
         width: 80px;
 
-        .sidebar-items {
-            height: calc(100vh - 86px);
+        .arrow-wrapper {
+            height: 5rem;
+            display: flex;
             align-items: center;
+            justify-content: center;
+        }
+
+        .sidebar-items {
+            height: calc(100vh - 145px);
+            align-items: center;
+            flex-wrap: nowrap;
+            overflow-y: auto;
+            overflow-x: hidden;
 
             .user-item {
                 margin-top: auto;
+            }
+
+            .nav-item {
+                padding: 1.25rem 0;
             }
 
         }

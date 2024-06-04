@@ -7,7 +7,7 @@ export default function Homepage() {
             <section className="homepage-chatbot">
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-12">
+                        <div className="col-12 ps-0">
                             <div className="d-flex">
                                 <Sidebar />
                                 <Chatbot />
