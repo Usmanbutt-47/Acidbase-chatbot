@@ -12,10 +12,8 @@ body {
     color: $white;
     background-image: url(/assets/images/bg-homepage-chat-gradient.svg);
     display: block;
-    height: 100%;
     background-size: cover;
     background-position: center;
-    width: 100%;
 
     &::-webkit-scrollbar {
         width: 6px;
