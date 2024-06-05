@@ -24,27 +24,12 @@ body {
                     border: 1px solid $border;
                     border-radius: 0 8px 8px 8px;
                     background-color: $secondary;
-                    padding: 1rem;
-                    margin-bottom: 0;
-
-                    .like-icon {
-                        right: 8px;
-                        border: 1px solid $border;
-                        border-radius: 50%;
-                        background-color: $warning;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        padding: 4px;
-                        width: 30px;
-                        height: 30px;
-                        bottom: -14px;
-                    }
+                    padding: 1.5rem;
                 }
 
                 .bg-ans-gradient {
                     position: relative;
-                    padding: 1rem;
+                    padding: 1.5rem;
                     margin-bottom: 0;
 
                     &::after {
@@ -62,6 +47,46 @@ body {
                         pointer-events: none;
                     }
                 }
+
+                .like-icon {
+                    right: 12px;
+                    bottom: -14px;
+                    border: 1px solid $active;
+                    border-radius: 50%;
+                    background-color: $warning;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 8px;
+                    width: 32px;
+                    height: 32px;
+                    z-index: 1;
+                    cursor: pointer;
+
+                    &.active {
+                        border: 1px solid $border;
+                    }
+                }
+
+                .dislike-icon {
+                    right: 54px;
+                    bottom: -14px;
+                    border: 1px solid $active;
+                    border-radius: 50%;
+                    background-color: $warning;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 8px;
+                    width: 32px;
+                    height: 32px;
+                    z-index: 1;
+                    cursor: pointer;
+
+                    &.active {
+                        border: 1px solid $border;
+                    }
+                }
             }
 
             .user-ques-wrapper {
@@ -76,7 +101,7 @@ body {
                         border: 1px solid $border;
                         border-radius: 8px 0 8px 8px;
                         background-color: $secondary;
-                        padding: 1rem;
+                        padding: 1.5rem;
                         margin-bottom: 0;
                     }
                 }

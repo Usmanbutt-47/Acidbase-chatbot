@@ -42,12 +42,15 @@ export default function Chatbot() {
                                 <div className="col-md-auto">
                                     <h6>Acidbase AI - Marques Brownlee</h6>
                                     <div className="d-flex align-items-center mb-2">
-                                        <p className="bg-ans position-relative">
-                                            Hey there! I'm trying to put together a really unique and personalized avatar for my online profiles. Think you can work some of that AI magic and help me out?
-                                            <div className="position-absolute like-icon">
+                                        <div className="bg-ans position-relative">
+                                            <p className="mb-0">Hey there! I'm trying to put together a really unique and personalized avatar for my online profiles. Think you can work some of that AI magic and help me out?</p>
+                                            <span className="position-absolute like-icon active">
                                                 <Icon icon="fluent-emoji:thumbs-up" width={24} height={24} />
-                                            </div>
-                                        </p>
+                                            </span>
+                                            <span className="position-absolute dislike-icon active">
+                                                <Icon icon="fluent-emoji:thumbs-down" width={24} height={24} />
+                                            </span>
+                                        </div>
                                         <div className="dropdown ms-2">
                                             <button className="btn text-light border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                                 <Icon icon="ri:more-2-line" width={24} height={24} />
@@ -115,9 +118,29 @@ export default function Chatbot() {
                                 </div>
                                 <div className="col-md-auto">
                                     <h6>Acidbase AI - Marques Brownlee</h6>
-                                    <p className="bg-ans-gradient">
+                                    <div className="d-flex align-items-center mb-2">
+                                        <div className="bg-ans-gradient position-relative">
+                                            <p className="mb-0">Hey there! I'm trying to put together a really unique and personalized avatar for my online profiles. Think you can work some of that AI magic and help me out?</p>
+                                            <span className="position-absolute like-icon">
+                                                <Icon icon="fluent-emoji:thumbs-up" width={24} height={24} />
+                                            </span>
+                                            <span className="position-absolute dislike-icon">
+                                                <Icon icon="fluent-emoji:thumbs-down" width={24} height={24} />
+                                            </span>
+                                        </div>
+                                        <div className="dropdown ms-2">
+                                            <button className="btn text-light border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <Icon icon="ri:more-2-line" width={24} height={24} />
+                                            </button>
+                                            <ul className="dropdown-menu">
+                                                <li><a className="dropdown-item" href="#">Report Response</a></li>
+                                                <li><a className="dropdown-item" href="#">Edit Response</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    {/* <p className="bg-ans">
                                         Well, well, if it isn't the one and only John Smith! What's up, my friend? How can I help you create an absolutely killer avatar today?
-                                    </p>
+                                    </p> */}
                                     <p>08:15</p>
                                 </div>
                             </div>
@@ -128,8 +151,20 @@ export default function Chatbot() {
                             <div className="row flex-nowrap user-ques">
                                 <div className="col-md-auto">
                                     <h6>John Smith</h6>
-                                    <p className="bg-ques">
-                                        Hey there! I'm trying to put together a really unique and personalized avatar for my online profiles. Think you can work some of that AI magic and help me out?                            </p>
+                                    <div className="d-flex align-items-center mb-2">
+                                        <div className="dropdown me-2">
+                                            <button className="btn text-light border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <Icon icon="ri:more-2-line" width={24} height={24} />
+                                            </button>
+                                            <ul className="dropdown-menu">
+                                                <li><a className="dropdown-item" href="#">Report Response</a></li>
+                                                <li><a className="dropdown-item" href="#">Edit Response</a></li>
+                                            </ul>
+                                        </div>
+                                        <p className="bg-ques">
+                                            Hey there! I'm trying to put together a really unique and personalized avatar for my online profiles. Think you can work some of that AI magic and help me out?
+                                        </p>
+                                    </div>
                                     <p>08:15</p>
                                 </div>
                                 <div className="col-md-auto">
@@ -141,6 +176,49 @@ export default function Chatbot() {
                                         height={48}
                                         priority
                                     />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row ai-ans-wrapper">
+                        <div className="col-md-7">
+                            <div className="row flex-nowrap">
+                                <div className="col-md-auto">
+                                    <Image
+                                        src="/assets/images/user.png"
+                                        alt="Acidbase Logo"
+                                        className="user"
+                                        width={48}
+                                        height={48}
+                                        priority
+                                    />
+                                </div>
+                                <div className="col-md-auto">
+                                    <h6>Acidbase AI - Marques Brownlee</h6>
+                                    <div className="d-flex align-items-center mb-2">
+                                        <div className="bg-ans position-relative">
+                                            <p className="mb-0">Hey there! I'm trying to put together a really unique and personalized avatar for my online profiles. Think you can work some of that AI magic and help me out?</p>
+                                            <span className="position-absolute like-icon">
+                                                <Icon icon="fluent-emoji:thumbs-up" width={24} height={24} />
+                                            </span>
+                                            <span className="position-absolute dislike-icon">
+                                                <Icon icon="fluent-emoji:thumbs-down" width={24} height={24} />
+                                            </span>
+                                        </div>
+                                        <div className="dropdown ms-2">
+                                            <button className="btn text-light border-0 dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <Icon icon="ri:more-2-line" width={24} height={24} />
+                                            </button>
+                                            <ul className="dropdown-menu">
+                                                <li><a className="dropdown-item" href="#">Report Response</a></li>
+                                                <li><a className="dropdown-item" href="#">Edit Response</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    {/* <p className="bg-ans">
+                                        Well, well, if it isn't the one and only John Smith! What's up, my friend? How can I help you create an absolutely killer avatar today?
+                                    </p> */}
+                                    <p>08:15</p>
                                 </div>
                             </div>
                         </div>
