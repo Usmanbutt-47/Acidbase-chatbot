@@ -76,4 +76,28 @@ body {
             opacity: 0.2;
         }
     }
+
+    // dropdown 
+    .dropdown-toggle {
+        &::after {
+            display: none;
+        }
+
+        &:active {
+            border: none;
+        }
+    }
+
+    .dropdown-menu {
+        background-color: $info;
+        border: 1px solid $border;
+        box-shadow: 0px 7px 14px 0px #00000040;
+        color: $white;
+
+        .dropdown-item {
+            &:hover {
+                background-color: $dark;
+            }
+        }
+    }
 }
