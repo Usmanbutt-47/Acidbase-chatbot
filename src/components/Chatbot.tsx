@@ -172,7 +172,7 @@ export default function Chatbot() {
                                         <div className="position-absolute emoji-icon">
                                             <Icon icon="ri:emotion-happy-line" width={28} height={28} className="cursor" />
                                         </div>
-                                        <textarea className="form-control" id="exampleFormControlTextarea1" placeholder="Awesome, I'm ready for it. What did you have in mind?"></textarea>
+                                        <textarea className="form-control" id="exampleFormControlTextarea1" placeholder="Awesome, I'm ready for it?"></textarea>
                                         <div className="position-absolute voice-icon">
                                             <Icon icon="ri:send-plane-line" width={28} height={28} className="cursor" />
                                         </div>
@@ -238,9 +238,9 @@ export default function Chatbot() {
                     </div>
                 </div>
                 <div className="card-footer">
-                    <div className="row align-items-center">
+                    <div className="row align-items-center mb-3">
                         <div className="col-md-8 mx-auto">
-                            <div className="position-relative mb-3">
+                            <div className="position-relative send-message">
                                 <textarea className="form-control" id="exampleFormControlTextarea1" placeholder="Type your message"></textarea>
                                 <div className="position-absolute voice-icon">
                                     <Icon icon="ri:mic-line" width={28} height={28} className="cursor" />
@@ -260,11 +260,12 @@ export default function Chatbot() {
                 <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h1 className="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                            <Icon icon="ri:feedback-line" width={28} height={28} className="me-3" />
+                            <h1 className="modal-title fs-5" id="exampleModalLabel">Send Feedback</h1>
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body">
-                            ...
+                            <textarea className="form-control" id="exampleFormControlTextarea1" placeholder="Type your message" rows={4}></textarea>
                         </div>
                         <div className="modal-footer">
                             <button type="button" className="btn btn-primary send-feedback-btn">Send Feedback

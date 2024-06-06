@@ -61,7 +61,7 @@ body {
         background-color: $dark;
         border: none;
         resize: none;
-        padding: 1.75rem 3rem 0.25rem 1.5rem;
+        // padding: 1.75rem 3rem 0.25rem 1.5rem;
         color: $white;
 
         &:focus {
@@ -77,11 +77,14 @@ body {
         }
     }
 
+    .send-message {
+        .form-control {
+            padding: 1.75rem 3rem 0.25rem 1.5rem;
+        }
+    }
+
     .edit-message {
         .form-control {
-            background-color: $dark;
-            border: none;
-            resize: none;
             padding: 1.75rem 3rem 0.25rem 4rem;
         }
     }
@@ -143,10 +146,20 @@ body {
 
         .modal-header {
             border-color: $border;
+
+            .btn-close {
+                filter: invert(1);
+                opacity: 1;
+            }
         }
 
         .modal-footer {
             border: none;
         }
+    }
+
+    .modal-backdrop {
+        --bs-backdrop-bg: #0A1027F2;
+        --bs-backdrop-opacity: 1;
     }
 }
