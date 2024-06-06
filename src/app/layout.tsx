@@ -10,7 +10,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 import Head from 'next/head';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import 'aos/dist/aos.js'; 
+import 'aos/dist/aos.js';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -25,13 +25,13 @@ export default function RootLayout({
 }: RootLayoutProps) {
 
   useEffect(() => {
-    if(typeof document !== undefined){
+    if (typeof document !== undefined) {
       import('bootstrap/dist/js/bootstrap.bundle.min.js')
       AOS.init();
     }
   }, [])
 
-  return (    
+  return (
     <html lang="en">
       <Head>
         <meta charSet="utf-8" />

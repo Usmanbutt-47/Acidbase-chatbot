@@ -77,6 +77,15 @@ body {
         }
     }
 
+    .edit-message {
+        .form-control {
+            background-color: $dark;
+            border: none;
+            resize: none;
+            padding: 1.75rem 3rem 0.25rem 4rem;
+        }
+    }
+
     // dropdown 
     .dropdown-toggle {
         &::after {
@@ -98,6 +107,46 @@ body {
             &:hover {
                 background-color: $dark;
             }
+        }
+    }
+
+    // buttons
+    .btn-primary {
+        background: $primary-gradient;
+        border: none;
+        font-size: 1rem;
+        font-weight: 700;
+        color: $white;
+
+        &:hover {
+            color: $white;
+            opacity: 0.85;
+        }
+
+        &:active {
+            color: $white !important;
+        }
+    }
+
+    .give-feedback-btn {
+        padding: 1rem 1.5rem;
+    }
+
+    .send-feedback-btn {
+        padding: 0.75rem 1.25rem;
+    }
+
+    // modal 
+    .modal-content {
+        background-color: $bg-modal;
+        border-color: $border;
+
+        .modal-header {
+            border-color: $border;
+        }
+
+        .modal-footer {
+            border: none;
         }
     }
 }
