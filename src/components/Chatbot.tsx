@@ -247,7 +247,7 @@ export default function Chatbot() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-auto">
+                        <div className="col-auto pe-4">
                             <button className="btn btn-primary give-feedback-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                 <Icon icon="ri:feedback-line" width={28} height={28} className="me-3" />
                                 Give Feedback
@@ -265,7 +265,7 @@ export default function Chatbot() {
                             <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div className="modal-body">
-                            <textarea className="form-control" id="exampleFormControlTextarea1" placeholder="Type your message" rows={4}></textarea>
+                            <textarea className="form-control" id="exampleFormControlTextarea1" placeholder="Type your message" rows={5}></textarea>
                         </div>
                         <div className="modal-footer">
                             <button type="button" className="btn btn-primary send-feedback-btn">Send Feedback
